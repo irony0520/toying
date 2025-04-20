@@ -1,0 +1,5 @@
+
+###조회
+
+GET http://localhost:8080/api/tmbs/search?query=쇼생크탈출
+Accept: application/json
