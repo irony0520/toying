@@ -3,3 +3,17 @@
 
 GET http://localhost:8080/api/tmbs/search?query=쇼생크탈출
 Accept: application/json
+
+### 알라딘 책 검색
+GET http://www.aladin.co.kr/ttb/api/ItemSearch.aspx
+    ?ttbkey=
+    &Query=라이프오브파이
+    &QueryType=BookTitle
+    &MaxResults=5
+    &SearchTarget=Book
+    &output=js
+    &Version=20131101
+
+### 알라딘 책 검색 (Spring 컨트롤러 통해)
+GET http://localhost:8080/api/aladin/search?keyword=fish
+Accept: application/json
