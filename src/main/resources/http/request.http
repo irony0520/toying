@@ -16,4 +16,16 @@ GET http://www.aladin.co.kr/ttb/api/ItemSearch.aspx
 
 ### 알라딘 책 검색 (Spring 컨트롤러 통해)
 GET http://localhost:8080/api/aladin/search?keyword=fish
+
 Accept: application/json
+
+### 회원가입 요청
+POST http://localhost:8080/api/users/register
+Content-Type: application/json
+
+{
+  "userId": "kdi3324",
+  "username": "강두일",
+  "password": "늙고병듬",
+  "role": "god"
+}
